@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol PaintingTableViewCellDelegate: class {
+    func likeButtonWasTapped(on cell: PaintingTableViewCell)
+}
+
 class PaintingTableViewCell: UITableViewCell {
+    
+    weak var delegate: PaintingTableViewCellDelegate?
     
     var painting: Painting? {
         didSet {
@@ -20,7 +26,7 @@ class PaintingTableViewCell: UITableViewCell {
     @IBOutlet var likeUnlikeButton: UIButton!
     
     @IBAction func likeUnlikeButtonTapped(_ sender: Any) {
-        // call toggleIsLiked?
+        delegate?.likeButtonWasTapped(on: self)
     }
     
     func updateViews() {
