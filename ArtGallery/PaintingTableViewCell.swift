@@ -20,7 +20,7 @@ class PaintingTableViewCell: UITableViewCell {
     @IBOutlet var likeUnlikeButton: UIButton!
     
     @IBAction func likeUnlikeButtonTapped(_ sender: Any) {
-        
+        // call toggleIsLiked?
     }
     
     func updateViews() {
@@ -28,7 +28,12 @@ class PaintingTableViewCell: UITableViewCell {
         
         paintingView.image = painting.image
         
-        // button title
+        if painting.isLiked {
+            likeUnlikeButton.setTitle("Unlike", for: .normal)
+        } else if !painting.isLiked {
+            likeUnlikeButton.setTitle("Like", for: .normal)
+        }
         
     }
 }
+

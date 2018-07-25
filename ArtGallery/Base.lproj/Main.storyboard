@@ -14,7 +14,7 @@
         <!--Art Gallery-->
         <scene sceneID="TaQ-AO-qUQ">
             <objects>
-                <viewController id="IAo-NW-Od0" sceneMemberID="viewController">
+                <viewController id="IAo-NW-Od0" customClass="PaintingListViewController" customModule="ArtGallery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jN8-HD-suf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,9 @@
                         <viewLayoutGuide key="safeArea" id="oTn-YB-VV7"/>
                     </view>
                     <navigationItem key="navigationItem" title="Art Gallery" id="6uU-Bh-DjO"/>
+                    <connections>
+                        <outlet property="tableView" destination="AcK-b2-zkU" id="7bw-f4-eoJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ZZ-AM-RnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
