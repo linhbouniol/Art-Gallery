@@ -23,31 +23,37 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaintingCell" rowHeight="184" id="VVZ-Q8-hjZ" customClass="PaintingTableViewCell" customModule="ArtGallery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="184"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaintingCell" rowHeight="217" id="VVZ-Q8-hjZ" customClass="PaintingTableViewCell" customModule="ArtGallery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="217"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VVZ-Q8-hjZ" id="4ex-Tj-6wP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="183.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="216.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y4S-kq-b7o">
-                                                    <rect key="frame" x="67" y="11" width="240" height="128"/>
-                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt0-dX-zgo">
-                                                    <rect key="frame" x="164" y="147" width="46" height="30"/>
+                                                    <rect key="frame" x="164" y="178.5" width="46" height="30"/>
                                                     <state key="normal" title="Button"/>
                                                     <connections>
                                                         <action selector="likeUnlikeButtonTapped:" destination="VVZ-Q8-hjZ" eventType="touchUpInside" id="TFW-EX-4pV"/>
                                                     </connections>
                                                 </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y4S-kq-b7o">
+                                                    <rect key="frame" x="67" y="36.5" width="241" height="144"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="241" id="dgL-KV-KsE"/>
+                                                        <constraint firstAttribute="height" constant="144" id="qjU-TX-ROE"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Y4S-kq-b7o" firstAttribute="centerX" secondItem="4ex-Tj-6wP" secondAttribute="centerX" id="9Jr-Cr-NhS"/>
-                                                <constraint firstItem="Lt0-dX-zgo" firstAttribute="top" secondItem="Y4S-kq-b7o" secondAttribute="bottom" constant="8" symbolic="YES" id="AMz-f9-5r6"/>
-                                                <constraint firstItem="Y4S-kq-b7o" firstAttribute="leading" secondItem="4ex-Tj-6wP" secondAttribute="leadingMargin" constant="52" id="AxZ-vv-eMn"/>
-                                                <constraint firstItem="Y4S-kq-b7o" firstAttribute="top" secondItem="4ex-Tj-6wP" secondAttribute="topMargin" id="OVo-FD-WTK"/>
-                                                <constraint firstItem="Y4S-kq-b7o" firstAttribute="centerX" secondItem="Lt0-dX-zgo" secondAttribute="centerX" id="c19-ff-amo"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Lt0-dX-zgo" secondAttribute="bottom" constant="-4" id="jdL-mS-jEx"/>
+                                                <constraint firstItem="Y4S-kq-b7o" firstAttribute="top" secondItem="4ex-Tj-6wP" secondAttribute="topMargin" constant="25.5" id="8a7-lE-5ps"/>
+                                                <constraint firstItem="Y4S-kq-b7o" firstAttribute="centerY" secondItem="4ex-Tj-6wP" secondAttribute="centerY" id="Hbq-ON-l3Q"/>
+                                                <constraint firstItem="Y4S-kq-b7o" firstAttribute="centerX" secondItem="4ex-Tj-6wP" secondAttribute="centerX" id="Ube-1F-o7b"/>
+                                                <constraint firstItem="Y4S-kq-b7o" firstAttribute="leading" secondItem="4ex-Tj-6wP" secondAttribute="leadingMargin" constant="52" id="Wj1-Ag-BTk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Y4S-kq-b7o" secondAttribute="trailing" constant="52" id="d0j-sE-FTC"/>
+                                                <constraint firstItem="Lt0-dX-zgo" firstAttribute="centerX" secondItem="Y4S-kq-b7o" secondAttribute="centerX" id="eaW-ck-ycx"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Y4S-kq-b7o" secondAttribute="bottom" constant="25.5" id="oBw-8r-bbl"/>
+                                                <constraint firstItem="Lt0-dX-zgo" firstAttribute="top" secondItem="Y4S-kq-b7o" secondAttribute="bottom" constant="-2" id="yUf-5G-8xI"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -74,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ZZ-AM-RnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="-779.46026986506752"/>
+            <point key="canvasLocation" x="2039.2" y="-779.46026986506752"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eMf-Qy-vIP">
@@ -92,7 +98,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UU3-r5-Va2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981.60000000000002" y="-779.46026986506752"/>
+            <point key="canvasLocation" x="1322" y="-779"/>
         </scene>
     </scenes>
 </document>
