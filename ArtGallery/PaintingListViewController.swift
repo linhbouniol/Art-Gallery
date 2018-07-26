@@ -48,6 +48,7 @@ class PaintingListViewController: UIViewController, UITableViewDataSource, UITab
         guard let index = tableView.indexPath(for: cell) else { return }
         
         let painting = paintingController.paintings[index.row]
+//        let painting = cell.painting!
         
         paintingController.toggleIsLiked(for: painting)
         
